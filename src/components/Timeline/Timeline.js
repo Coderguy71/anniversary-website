@@ -267,7 +267,7 @@ const Timeline = () => {
         className="decoration heart-1"
         animate={float}
       >
-        ❤️
+        
       </motion.div>
       <motion.div 
         className="decoration heart-2"
@@ -276,7 +276,7 @@ const Timeline = () => {
           transition: { ...float.transition, delay: 0.5 }
         }}
       >
-        🌟
+        
       </motion.div>
       <motion.div 
         className="decoration heart-3"
@@ -285,7 +285,7 @@ const Timeline = () => {
           transition: { ...float.transition, delay: 1 }
         }}
       >
-        ✨
+        
       </motion.div>
       
       <style jsx>{`
@@ -363,6 +363,7 @@ const Timeline = () => {
           position: relative;
           width: 50%;
           box-sizing: border-box;
+          transition: all 0.3s ease;
         }
         
         .timeline-item.left {
@@ -385,6 +386,7 @@ const Timeline = () => {
           box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
           transition: all 0.3s ease;
           border: 1px solid rgba(0, 0, 0, 0.05);
+          margin: 0 1rem;
         }
         
         .timeline-item.highlight .timeline-content {
@@ -548,52 +550,100 @@ const Timeline = () => {
         }
         
         @media (max-width: 992px) {
+          .container {
+            padding: 0 1.5rem;
+          }
+          
+          .timeline-container {
+            padding: 0;
+          }
+          
           .timeline-line {
-            left: 40px;
+            left: 30px !important;
           }
           
-          .timeline-item {
-            width: 100%;
-            padding-left: 80px;
-            padding-right: 0;
-            text-align: left;
-          }
-          
+          .timeline-item,
           .timeline-item.left, 
           .timeline-item.right {
-            left: 0;
+            width: 100%;
+            padding-left: 70px;
             padding-right: 0;
-            padding-left: 80px;
             text-align: left;
+            margin-bottom: 1.5rem;
           }
           
-          .timeline-item.left .timeline-icon,
-          .timeline-item.right .timeline-icon {
-            left: 15px;
+          .timeline-item .timeline-icon {
+            left: 5px !important;
             right: auto;
+            width: 40px;
+            height: 40px;
+            font-size: 1.6rem;
           }
           
-          .timeline-item.left .timeline-date,
-          .timeline-item.right .timeline-date {
-            justify-content: flex-start;
+          .timeline-date {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+          }
+          
+          .timeline-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+          }
+          
+          .timeline-description {
+            font-size: 1.5rem;
+            line-height: 1.5;
           }
         }
         
         @media (max-width: 768px) {
           .section-title {
-            font-size: 3.6rem;
+            font-size: 3.2rem;
+            margin-bottom: 1.5rem;
+          }
+          
+          .section-subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
           }
           
           .timeline-content {
-            padding: 2rem;
+            padding: 1.8rem;
+            margin: 0 0 3rem 0;
           }
           
           .timeline-title {
-            font-size: 1.8rem;
+            font-size: 2rem;
+            margin-bottom: 1rem;
           }
           
           .timeline-description {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
+            line-height: 1.5;
+          }
+          
+          .timeline-date {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+          }
+          
+          .timeline-line {
+            left: 30px !important;
+          }
+          
+          .timeline-item,
+          .timeline-item.left,
+          .timeline-item.right {
+            padding-left: 70px;
+            padding-right: 0;
+            width: 100%;
+          }
+          
+          .timeline-icon {
+            width: 40px;
+            height: 40px;
+            left: 5px !important;
+            font-size: 1.6rem;
           }
           
           .timeline-footer p {
