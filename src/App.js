@@ -12,15 +12,30 @@ import Home from './components/Home/Home';
 import LoveLetter from './components/LoveLetter/LoveLetter';
 import PhotoGallery from './components/PhotoGallery/PhotoGallery';
 import Playlist from './components/Playlist/Playlist';
-
 import Timeline from './components/Timeline/Timeline';
 import HiddenSurprise from './components/HiddenSurprise/HiddenSurprise';
+import Countdown from './components/Countdown/Countdown';
 
 // Assets
 import { FaHeart, FaMusic, FaImages, FaEnvelope, FaList, FaHistory, FaStar } from 'react-icons/fa';
 
 function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [isLaunched, setIsLaunched] = useState(false);
+  const launchDate = new Date('August 14, 2025 00:00:00');
+
+  // Check if we've reached the launch date
+  useEffect(() => {
+    const checkLaunchDate = () => {
+      const now = new Date();
+      setIsLaunched(now >= launchDate);
+    };
+    
+    checkLaunchDate();
+    const timer = setInterval(checkLaunchDate, 60000); // Check every minute
+    
+    return () => clearInterval(timer);
+  }, []);
 
   // Handle scroll to show/hide scroll-to-top button
   useEffect(() => {
@@ -43,6 +58,16 @@ function App() {
       behavior: 'smooth',
     });
   };
+
+  // Show countdown if not launched yet
+  if (!isLaunched) {
+    return (
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Countdown onCountdownEnd={() => setIsLaunched(true)} />
+      </ThemeProvider>
+    );
+  }
 
   return (
     <ThemeProvider theme={theme}>
