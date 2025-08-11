@@ -6,7 +6,7 @@ const questions = [
   {
     id: 1,
     question: "What is our favorite shared activity?",
-    options: ["Watching movies", "Hiking", "Cooking together", "Playing games"],
+    options: ["Going to Ritas", "Debate", "Cooking together", "Playing Minecraft"],
     correct: 3
   },
   {
