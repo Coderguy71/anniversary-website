@@ -99,42 +99,35 @@ const LoveLetter = () => {
                     
                     <div className="letter-body">
                       <p>
-                        Emma you are the most beautiful person I have ever met. Inside and out. Who else can be filled with empathy, kindness, and love like you?. I cannot belive I have gotten to spend 11 amazing months with you. 
+                        Emma you are the most beautiful person I have ever met. Inside and out. Who else can be filled with empathy, kindness, and love like you? I cannot belive I have gotten to spend 11 amazing months with you. 
                         While we have had our ups and downs, we always found a way to make it through. 
                       </p>
                       <p>
-                        Your smile lights up my world, and your laughter fills my heart with joy. I cherish every memory 
-                        we've created together, from our first date to our most recent adventures. You make me feel 
-                        seen, heard, and loved in ways I never thought possible.
+                        Every minute that I spend with you goes by so fast, and I geniuenly cherish it so much. 11 amazing months have gone by with you and I still belive
+                        I am the most lucky guy in the whole world for having you as my girlfriend. I can't wait to see what the future holds for us, because 
+                        as long as you are there, its gonna be a good ride. 
                       </p>
                       <p>
-                        I am so grateful for your kindness, your strength, and your unwavering love. You are my partner, 
-                        my best friend, and my everything. I can't wait to see what the future holds for us, because 
-                        I know that as long as we're together, anything is possible.
+                        I still remember the first time we met like at work. I was dating someone else but I could already tell you would be an amazing friend (and that you were cute asf).
+                        The amount of yappery and oversharing made you an amazing coworker. Weeks of work turned into months and when it was time to say goodbye I cant lie, I was sad. 
+                        Then we kept on texting, which then turned to calling, and then me and my girlfriend broke up. You were there to comfort me (albeit you were celebrating) even when my friends 
+                        were being assholes. Then we played minecraft together and I knew I was gonna love you forever.  
                       </p>
                       <p>
-                        I still remember the first time we met like it was yesterday. Your smile lit up the room, and 
-                        I knew right then that there was something special about you. Little did I know that you would 
-                        become the most important person in my life.
+                        It is still a dream that I see you literally perfect face everyday and that I get to touch you, tickle you, hug you, kiss you, listen to your laugh and yap, and 
+                        watch you when you tweak out on call or do some weird but cute stuff. AGHHHH I love when you do weird stuff, its so cuteeeee. Your piercing green eyes and everything about you is an instant
+                        lafufu bringer. 
                       </p>
                       <p>
-                        You've brought so much joy, laughter, and love into my life. Your kindness, your strength, 
-                        and your beautiful heart inspire me every single day. You make me want to be a better person, 
-                        and I'm so grateful to have you by my side.
+                        Even after we broke up, and I was being a very bad boyfriend, you still wanted to try with me (the alternatives were not great). I was so grateful for that. 
+                        I cannot wait for prom and the end of senior year next year 
                       </p>
                       <p>
-                        Through all the ups and downs, you've been my rock. Your support means the world to me, and 
-                        I hope you know how much I appreciate you. You're my best friend, my partner in crime, and 
-                        the love of my life.
+                        I wish I was there with you in person today so I can give you a hug and a kiss but I cannot wait to see you on Sunday at the mall!
                       </p>
                       <p>
-                        As we celebrate 11 months together, I want you to know that my love for you grows stronger 
-                        with each passing day. I can't wait to create many more beautiful memories with you and 
-                        continue this incredible journey together.
-                      </p>
-                      <p>
-                        Thank you for being you, for loving me, and for making every day brighter just by being in it. 
-                        I love you more than words could ever express.
+                        Thank you for loving me and making by life considerably better by being in it. I love you so so so much you have no idea, my sweet, beautiful, gorgeous, 
+                        renissance scupltor sculpted, divine, angelic, goddess, pookie Emma. 
                       </p>
                       <p className="signature">
                         Forever yours,<br />
