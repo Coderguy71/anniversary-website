@@ -78,7 +78,7 @@ const LoveLetter = () => {
               >
                 <div className="button-container">
                   <button className="open-button" onClick={handleOpenLetter}>
-                    Open My Love Letter
+                    A Letter to You
                   </button>
                 </div>
               </motion.div>
@@ -99,9 +99,8 @@ const LoveLetter = () => {
                     
                     <div className="letter-body">
                       <p>
-                        As I sit down to write this letter, my heart is filled with so much love and gratitude for you. 
-                        These past 11 months with you have been nothing short of magical. Every moment spent with you 
-                        feels like a beautiful dream that I never want to wake up from.
+                        Emma you are the most beautiful person I have ever met. Inside and out. Who else can be filled with empathy, kindness, and love like you?. I cannot belive I have gotten to spend 11 amazing months with you. 
+                        While we have had our ups and downs, we always found a way to make it through. 
                       </p>
                       <p>
                         Your smile lights up my world, and your laughter fills my heart with joy. I cherish every memory 
@@ -139,7 +138,7 @@ const LoveLetter = () => {
                       </p>
                       <p className="signature">
                         Forever yours,<br />
-                        <span>Me</span>
+                        <span>Ishaan Trivedi</span>
                       </p>
                     </div>
                     
@@ -157,17 +156,7 @@ const LoveLetter = () => {
                   </div>
                 </div>
 
-                {/* Scroll prompt */}
-                {showScrollPrompt && (
-                  <motion.div
-                    className="scroll-prompt"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    onClick={scrollDown}
-                  >
-                    <span>Continue reading...</span>
-                  </motion.div>
-                )}
+                
               </motion.div>
             )}
           </AnimatePresence>

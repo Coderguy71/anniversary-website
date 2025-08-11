@@ -120,7 +120,7 @@ const Countdown = ({ onCountdownEnd }) => {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const targetDate = new Date('August 14, 2025 12:00:00').getTime();
+      const targetDate = new Date('August 8, 2025 12:00:00').getTime();
       const now = new Date().getTime();
       const difference = targetDate - now;
 

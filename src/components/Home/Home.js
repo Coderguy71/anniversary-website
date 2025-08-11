@@ -53,7 +53,7 @@ const Home = () => {
               ease: 'linear',
             }}
           >
-            ❤️
+            
           </motion.div>
         ))}
       </div>
@@ -89,7 +89,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.8 }}
             >
-              <AnimatedText>Hi love</AnimatedText>{' '}
+              <AnimatedText>Hi Pookie</AnimatedText>{' '}
               <motion.span 
                 className="heart-emoji"
                 animate={{
@@ -138,16 +138,42 @@ const Home = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            <div className="image-wrapper">
-              <div className="polaroid">
-                <div className="polaroid-content">
-                  <div className="placeholder-image">
-                    <FaHeart className="placeholder-icon" />
-                    <span>Our Photo</span>
-                  </div>
-                  <div className="polaroid-caption">Us 💕</div>
-                </div>
-              </div>
+            <motion.div 
+              className="image-wrapper" 
+              style={{
+                width: '100%',
+                maxWidth: '350px',
+                margin: '0 auto',
+                position: 'relative',
+                transform: 'rotate(-3deg)',
+                transformOrigin: 'center'
+              }}
+              whileHover={{ 
+                transform: 'rotate(0deg) scale(1.05)',
+                transition: { duration: 0.3 }
+              }}
+            >
+              <img 
+                src={require('../../assets/images/Us.jpeg')} 
+                alt="Us" 
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                  borderRadius: '8px',
+                  boxShadow: '0 4px 15px rgba(0,0,0,0.15)',
+                  border: '3px solid white',
+                  transform: 'scale(0.98)'
+                }}
+              />
+              <div style={{
+                textAlign: 'center',
+                marginTop: '15px',
+                fontFamily: '"Caveat", cursive',
+                fontSize: '24px',
+                color: '#333',
+                transform: 'rotate(3deg)'
+              }}>Us 💕</div>
               
               {/* Decorative elements */}
               <motion.div 
@@ -174,36 +200,11 @@ const Home = () => {
               >
                 💖
               </motion.div>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
         
-        <motion.button 
-          className="scroll-indicator"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.5, duration: 0.8 }}
-          onClick={handleScroll}
-          style={{ 
-            cursor: 'pointer',
-            background: 'none',
-            border: 'none',
-            padding: '0',
-            margin: '0',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            color: 'var(--color-pink-dark)',
-            fontSize: '1.4rem',
-            fontWeight: '500',
-            textTransform: 'uppercase',
-            letterSpacing: '2px',
-            textDecoration: 'none'
-          }}
-        >
-          <FaChevronDown style={{ marginBottom: '0.5rem' }} />
-          <span>Scroll Down</span>
-        </motion.button>
+
       </div>
       
       {showHearts && renderHearts()}

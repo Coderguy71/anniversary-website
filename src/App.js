@@ -11,8 +11,9 @@ import Navbar from './components/Navbar';
 import Home from './components/Home/Home';
 import LoveLetter from './components/LoveLetter/LoveLetter';
 import PhotoGallery from './components/PhotoGallery/PhotoGallery';
-import Playlist from './components/Playlist/Playlist';
-import Timeline from './components/Timeline/Timeline';
+import Game from './components/Game/Game';
+import Rewards from './components/Rewards/Rewards';
+
 import HiddenSurprise from './components/HiddenSurprise/HiddenSurprise';
 import Countdown from './components/Countdown/Countdown';
 
@@ -84,10 +85,9 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/love-letter" element={<LoveLetter />} />
                 <Route path="/gallery" element={<PhotoGallery />} />
-                <Route path="/playlist" element={<Playlist />} />
-          
-                <Route path="/timeline" element={<Timeline />} />
-                <Route path="/surprise" element={<HiddenSurprise />} />
+                <Route path="/game" element={<Game />} />
+                <Route path="/rewards" element={<Rewards />} />
+                <Route path="/hidden-surprise" element={<HiddenSurprise />} />
               </Routes>
             </AnimatePresence>
           </main>

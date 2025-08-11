@@ -50,8 +50,6 @@ const MobileMenu = () => {
     { to: '/love-letter', label: 'Love Letter', icon: <FaEnvelope /> },
     { to: '/gallery', label: 'Our Photos', icon: <FaImages /> },
     { to: '/playlist', label: 'Our Playlist', icon: <FaMusic /> },
-
-    { to: '/timeline', label: 'Our Timeline', icon: <FaHistory /> },
     { to: '/surprise', label: 'Special Surprise', icon: <FaStar /> },
   ];
   

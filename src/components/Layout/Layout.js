@@ -56,8 +56,6 @@ const Layout = ({ children }) => {
     { to: '/love-letter', label: 'Love Letter', icon: <FaEnvelope /> },
     { to: '/gallery', label: 'Gallery', icon: <FaImages /> },
     { to: '/playlist', label: 'Playlist', icon: <FaMusic /> },
-
-    { to: '/timeline', label: 'Timeline', icon: <FaHistory /> },
     { to: '/surprise', label: 'Surprise', icon: <FaStar /> },
   ];
 

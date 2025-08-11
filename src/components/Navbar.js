@@ -32,9 +32,8 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'Love Letter', path: '/love-letter' },
     { name: 'Gallery', path: '/gallery' },
-    { name: 'Playlist', path: '/playlist' },
-
-    { name: 'Timeline', path: '/timeline' },
+    { name: 'Game', path: '/game' },
+    { name: 'Rewards', path: '/rewards' }
   ];
 
   return (
